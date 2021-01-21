@@ -209,6 +209,7 @@ div > section:nth-child(1){
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
     color: var(--white_color);
     padding-left: 0;
     padding-right:0;
