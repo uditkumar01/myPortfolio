@@ -56,7 +56,7 @@ nav > ul > li > ul > a > li {
   border: 3px outset transparent;
   border-left-width: 4px;
   border-radius: 0.3rem;
-  margin: 0.5rem;
+  margin: 0.6rem 0.5rem;
   background: linear-gradient(145deg, #a32f66, #c23879);
   box-shadow: 5px 5px 10px #9f2e63, -5px -5px 10px #cb3a7f;
 
@@ -106,7 +106,7 @@ nav > ul > li > #logo > #port {
 h1,h2,h3,h4,h5,h6{
     color: var(--red_color);
 }
-div > section {
+section {
   margin: auto;
   text-align: center;
   width: fit-content;
@@ -115,15 +115,15 @@ div > section {
   /* border-radius: 10px; */
   margin: 1rem 0rem;
 }
-div > section > div > #intro {
+section > div > #intro {
   font-size: 2rem;
   color: var(--white_color);
   /* position: relative; */
 }
-div > section > div > .about_me {
+section > div > .about_me {
   color: var(--white_color);
 }
-div > section > div > .about_me > #typing {
+section > div > .about_me > #typing {
   font-weight: bold;
   color: var(--white_color);
   padding: 0.1rem 0.1rem;
@@ -204,7 +204,7 @@ div > section > div > .about_me > #typing {
     border-radius: 5px;
     border: 4px inset var(--dark_red_color);
 }
-div > section:nth-child(1){
+section:nth-child(1){
     background: url(/assets/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -215,10 +215,10 @@ div > section:nth-child(1){
     padding-right:0;
     margin: 0;   
 }
-div > section:nth-child(2n) {
+section:nth-child(2n) {
   margin: 0;
   background: var(--white_color);
-  /* width: 100%; */
+  word-wrap: break-word;
   color: var(--dark_red_color);
   /* box-shadow: inset -7px -7px 14px #c8a4b5,
             inset 7px 7px 14px transparent; */
@@ -226,6 +226,7 @@ div > section:nth-child(2n) {
 div > section:nth-child(2n+3) {
     color: var(--white_color);
     background: var(--red_color);
+    word-wrap: break-word;
     /* width: 100%; */
     box-shadow: inset 5px 5px 10px #8f2959,inset -5px -5px 10px #8f2959;
     margin: 0;
@@ -277,4 +278,40 @@ i:hover{
 nav > ul{
   margin: 0;
   padding: 0;
+}
+section > p{
+  /* background: white; */
+  word-wrap: break-word;
+}
+
+
+/* new one */
+
+section{
+  margin: 0;
+
+}
+
+.main-list{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.main-list > li:nth-child(2n){
+  padding: 2rem;
+  color: var(--red_color);
+}
+.main-list > li:nth-child(2n+3){
+  padding: 2rem;
+  color: var(--white_color);
+  box-shadow: inset 5px 5px 10px #8f2959,inset -5px -5px 10px #8f2959;
+  background-color: var(--red_color);
+}
+.main-list > li > h3{
+  padding-bottom: 1rem;
+}
+.footer{
+  padding: 2rem;
+  background: var(--red_color);
 }
