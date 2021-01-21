@@ -1,8 +1,14 @@
 :root {
-  --red_color: #b53471;
-  --dark_red_color: #8d2958;
+  --red_color: #00a5ff;
+  --dark_red_color:  #045de9;
   --white_color: #eceef3;
   --blue-color: #0097e6;
+  --blue-gradient: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  --default-shadow: 5px 5px 10px #006fab, -5px -5px 10px #00dbff;
+  --active-shadow: inset 5px 5px 10px #006fab, inset -5px -5px 10px #00dbff;
+  --button-gradient: linear-gradient(145deg, #0095e6, #00b1ff);
+
+
 }
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 * {
@@ -24,13 +30,14 @@ body,html {
 nav {
   background: var(--red_color);
   padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   width: fit-content;
   color: var(--white_color);
   margin: 0;
   width: 100vw;
   /* height: 2rem; */
-  box-shadow: inset -7px -7px 14px #8f2959,
-              inset 7px 7px 14px #db3f89;
+  box-shadow: var(--active-shadow);
     /* height: 30px; */
     /* margin: 0 auto; */
     /* position: relative; */
@@ -57,8 +64,8 @@ nav > ul > li > ul > a > li {
   border-left-width: 4px;
   border-radius: 0.3rem;
   margin: 0.6rem 0.5rem;
-  background: linear-gradient(145deg, #a32f66, #c23879);
-  box-shadow: 5px 5px 10px #9f2e63, -5px -5px 10px #cb3a7f;
+  background: var(--button-gradient);
+  box-shadow: var(--default-shadow);
 
   cursor: pointer;
 }
@@ -67,7 +74,7 @@ nav > ul > li > ul > a > .active,
 nav > ul > li > ul > a > li:active,
 nav > ul > li > ul > a > li:hover {
   padding: 0.7rem 0.85rem;
-  box-shadow: inset 5px 5px 10px #9f2e63, inset -5px -5px 10px #cb3a7f;
+  box-shadow: var(--active-shadow);
   /* transition: 1s ease; */
 }
 
@@ -205,7 +212,7 @@ section > div > .about_me > #typing {
     border: 4px inset var(--dark_red_color);
 }
 section:nth-child(1){
-    background: url(/assets/bg.jpg);
+    background: url(/assets/bg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,7 +235,7 @@ div > section:nth-child(2n+3) {
     background: var(--red_color);
     word-wrap: break-word;
     /* width: 100%; */
-    box-shadow: inset 5px 5px 10px #8f2959,inset -5px -5px 10px #8f2959;
+    box-shadow: var(--active-shadow);
     margin: 0;
 }
 
@@ -253,13 +260,14 @@ div > section:nth-child(2n+3) {
     /* transition: 1s ease; */
   }
 .visit-btns1{
-    background: linear-gradient(145deg, #a32f66, #c23879); border-color: #a32f66; color: #eceef3;
+    background: var(--button-gradient);
+    border-color: var(--blue-color);
+    color: #eceef3;
 }
 
 .visit-btns1:hover {
     padding: 0.7rem 0.85rem;
-    box-shadow: inset 5px 5px 10px #8f2959,
-            inset -5px -5px 10px #db3f89;
+    box-shadow: var(--active-shadow);
     /* transition: 1s ease; */
   }
 
@@ -268,12 +276,10 @@ i{
     font-size: 2.3rem;
     padding: 0.4rem;
     margin: 0.5rem;
-    box-shadow:  5px 5px 10px #8f2959,
-             -5px -5px 10px #db3f89;
+    box-shadow:  var(--default-shadow);
 }
 i:hover{
-    box-shadow: inset 5px 5px 10px #8f2959,
-            inset -5px -5px 10px #db3f89;
+    box-shadow: var(--active-shadow);
 }
 nav > ul{
   margin: 0;
@@ -305,7 +311,7 @@ section{
 .main-list > li:nth-child(2n+3){
   padding: 2rem;
   color: var(--white_color);
-  box-shadow: inset 5px 5px 10px #8f2959,inset -5px -5px 10px #8f2959;
+  box-shadow: var(--active-shadow);
   background-color: var(--red_color);
 }
 .main-list > li > h3{
