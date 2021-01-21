@@ -218,7 +218,7 @@ div > section:nth-child(1){
 div > section:nth-child(2n) {
   margin: 0;
   background: var(--white_color);
-  width: 100vw;
+  /* width: 100%; */
   color: var(--dark_red_color);
   /* box-shadow: inset -7px -7px 14px #c8a4b5,
             inset 7px 7px 14px transparent; */
@@ -226,7 +226,7 @@ div > section:nth-child(2n) {
 div > section:nth-child(2n+3) {
     color: var(--white_color);
     background: var(--red_color);
-    width: 100vw;
+    /* width: 100%; */
     box-shadow: inset 5px 5px 10px #8f2959,inset -5px -5px 10px #8f2959;
     margin: 0;
 }
