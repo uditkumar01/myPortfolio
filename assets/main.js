@@ -4,7 +4,7 @@ function typer(box,arr){
     const typing_delay = 200;
     const deleting_delay = 150;
     const delay_text = 3000;
-
+    
     let textIndex = 0;
     let charIndex = 0;
     

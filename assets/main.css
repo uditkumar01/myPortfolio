@@ -213,6 +213,7 @@ section > div > .about_me > #typing {
 }
 section:nth-child(1){
     background: url(/assets/bg.jpeg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -356,4 +357,19 @@ section{
 .footer{
   padding: 2rem;
   background: var(--red_color);
+}
+
+
+.waves-contain,.waves-contain1{
+  width: 100%;
+  position: relative;
+  bottom: -5px;
+}
+
+.waves-contain1{
+  bottom: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* background: red; */
 }
