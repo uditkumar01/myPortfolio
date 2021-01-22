@@ -209,7 +209,7 @@ section > div > .about_me > #typing {
     padding-bottom: 20px;
     position: relative;
     border-radius: 5px;
-    border: 4px inset var(--dark_red_color);
+    border: 4px inset var(--white_color);
 }
 section:nth-child(1){
     background: url(/assets/bg.jpeg);
