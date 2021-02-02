@@ -373,3 +373,38 @@ section{
   padding: 0;
   /* background: red; */
 }
+
+.tags{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  
+}
+
+.tags > li{
+  background: #c0392b;
+  width: max-content;
+  padding: 0.3rem 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin: 0.3rem 0.3rem;
+  transition: 0.25s ease;
+  box-shadow: 3px 3px 5px #c8a4b5,
+              3px -3px 5px #fffaff;
+}
+.tags > li > span{
+  background: var(--white_color);
+  color: #c0392b;
+  padding: 0.02rem 0.28rem;
+  margin-left: 0.2rem;
+  border-radius: 50%;
+}
+
+.tags > li:hover{
+  scale: 1.08;
+  margin: 0.3rem 0.5rem;
+  box-shadow: none;
+}
